@@ -20,5 +20,12 @@ namespace MedalsAPI.Models
             this.Remove(country);
             this.SaveChanges();
         }
+
+          public void PatchCountry(int id, JsonPatchDocument<Country> patch)
+        {
+            Country country = this.Countries.FirstOrDefault(c => c.Id == id);
+            patch.ApplyTo(country);
+            this.SaveChanges();
+        }
     }
 }

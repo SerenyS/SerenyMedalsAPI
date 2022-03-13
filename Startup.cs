@@ -13,6 +13,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Microsoft.EntityFrameworkCore;
 using MedalsAPI.Models;
+using MedalsAPI.Hubs;
 
 namespace MedalsAPI
 {
@@ -30,17 +31,19 @@ namespace MedalsAPI
         {
             services.AddCors(options =>
             {
-                options.AddPolicy(name: "Open",
+               // options.AddPolicy(name: "Open",
+                 options.AddPolicy(name: "Hubs",
                     builder =>
                     {
                         builder
-                            .AllowAnyOrigin()
-                            .AllowAnyMethod()
-                            .AllowAnyHeader();
+                            .AllowAnyHeader()
+                            .WithOrigins("http://localhost:3000","https://serenycountrymedals.netlify.app/")
+                            .AllowCredentials();
                     });
             });
             services.AddDbContext<DataContext>(options => options.UseSqlite(Configuration.GetConnectionString("DefaultSQLiteConnection")));
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson();
+            services.AddSignalR();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { 
@@ -68,13 +71,16 @@ namespace MedalsAPI
 
             app.UseRouting();
 
-            app.UseCors("Open");
+             //app.UseCors("Open");
+            app.UseCors("Hubs");
+
 
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
+                endpoints.MapHub<MedalsHub>("/medalsHub");
             });
         }
     }

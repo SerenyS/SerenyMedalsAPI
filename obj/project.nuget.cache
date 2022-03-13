@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "OIgwiPC84SFQ2eyM9RiIqdNwOcNKwhxwQ5Fk7jQenN19SWc5d4mMr75VCM9lPibS/oBzB0pRV3HaizzNn9ryFQ==",
+  "dgSpecHash": "L8+bbEt5GNRTFFeqOHsbXY6sQwiz35RibWH4kV42YXr4OX7r0UZeynE/+Sp6Jr12/lO33FtubiuB5XCCqEoUQw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\19204\\Documents\\WCTC\\2022\\Spring 2022\\Advanced Web Services\\MedalsAPI\\MedalsAPI.csproj",
+  "projectFilePath": "C:\\Users\\19204\\Documents\\WCTC\\2022\\Spring 2022\\Advanced Web Services\\SerenysMedalsAPI\\MedalsAPI\\MedalsAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\19204\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\19204\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.9\\microsoft.aspnetcore.jsonpatch.5.0.9.nupkg.sha512",
+    "C:\\Users\\19204\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\5.0.9\\microsoft.aspnetcore.mvc.newtonsoftjson.5.0.9.nupkg.sha512",
     "C:\\Users\\19204\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\19204\\.nuget\\packages\\microsoft.data.sqlite.core\\5.0.0\\microsoft.data.sqlite.core.5.0.0.nupkg.sha512",
     "C:\\Users\\19204\\.nuget\\packages\\microsoft.dotnet.platformabstractions\\3.1.6\\microsoft.dotnet.platformabstractions.3.1.6.nupkg.sha512",
@@ -28,6 +30,8 @@
     "C:\\Users\\19204\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
     "C:\\Users\\19204\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
     "C:\\Users\\19204\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\19204\\.nuget\\packages\\newtonsoft.json\\12.0.2\\newtonsoft.json.12.0.2.nupkg.sha512",
+    "C:\\Users\\19204\\.nuget\\packages\\newtonsoft.json.bson\\1.0.2\\newtonsoft.json.bson.1.0.2.nupkg.sha512",
     "C:\\Users\\19204\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.0.4\\sqlitepclraw.bundle_e_sqlite3.2.0.4.nupkg.sha512",
     "C:\\Users\\19204\\.nuget\\packages\\sqlitepclraw.core\\2.0.4\\sqlitepclraw.core.2.0.4.nupkg.sha512",
     "C:\\Users\\19204\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.4\\sqlitepclraw.lib.e_sqlite3.2.0.4.nupkg.sha512",
